@@ -70,3 +70,7 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
+
+  h2 {
+    text-align: center;
+  }

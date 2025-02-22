@@ -2,15 +2,19 @@
     <nav>
       <button routerLink="./new">Add New</button>
     </nav>
-    <ul class="notes">
-      @for (note of notes; track $index) {
-      <li>
-        <button [routerLink]="['/note',note.id]">
-          <span class="note-title">{{ note.title }}</span>
-          <span class="note-text">{{ note.text }}</span>
-        </button>
-      </li>
-      }
-    </ul>
+    @if (notes.length > 0){
+      <ul class="notes">
+        @for (note of notes; track $index) {
+        <li>
+          <button [routerLink]="['/note',note.id]">
+            <span class="note-title">{{ note.title }}</span>
+            <span class="note-text">{{ note.text }}</span>
+          </button>
+        </li>
+        }
+      </ul>
+    } @else {
+      <h2>No notes registered!</h2>
+    }
   </div>
   
