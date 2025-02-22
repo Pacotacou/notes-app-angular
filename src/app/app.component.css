@@ -1,0 +1,14 @@
+input.ng-valid {
+    border-color: green;
+    background-color: lightgreen;
+}
+
+input.ng-invalid {
+    border-color: red;
+    background-color: lightcoral;
+}
+
+form p{
+    justify-content: right;
+    align-items: end;
+}

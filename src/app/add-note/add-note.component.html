@@ -1,0 +1,16 @@
+<p>add-note works!</p>
+<form [formGroup]="addNoteForm" (ngSubmit)="addNote()">
+    <div>
+        <label for="note-title">Title: 
+            <input id="note-title" formControlName="title" />
+        </label>
+    </div>
+    <div>
+        <label for="note-text">Text:
+            <input id="note-text" formControlName="text"/>
+        </label>
+    </div>
+    <button type="submit">Add Note</button>
+</form>
+
+<p>title:{{ addNoteForm.value.title }} </p>

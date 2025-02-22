@@ -1,0 +1,11 @@
+@if (note) {
+    <div id="note-container">
+        <span class="note-title">{{note.title}}</span>
+        <span class="note-id">{{note.id}}</span>
+        <span class="note-text">{{note.text}}</span>
+        <button (click)="delete()">Delete Note</button>
+    </div>
+}
+<nav>
+    <button routerLink="">Back to List</button>
+</nav>
