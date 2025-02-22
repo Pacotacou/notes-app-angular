@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { NOTES } from '../../notes';
 import { RouterModule, ActivatedRoute , Router} from '@angular/router';
-import { NONE_TYPE } from '@angular/compiler';
+
 
 @Component({
   selector: 'app-note-detail',
